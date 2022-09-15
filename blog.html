@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <h1 class="title"><img src="./logo.png" /></h1>
+    </header>
+    <main>
+      <main>
+        <section id="blogs" class="box-container">
+          <article>
+            <h2>1. What is the difference between Local Storage and Session Storage?</h2>
+            <p>
+              <b>Local Storage:</b> It is a web storage method that helps us store data on the client’s computer in the form of key/value pairs in a web browser. The data is stored in local storage for a lifetime unless the user manually deletes it from the browser. It does not expire even when the user closes the window or tab. Instead, the data remains in the browser until and unless the browser's memory is cleared.
+            </p>
+            <p>
+              <b>Session Storage:</b> It is very similar to the local storage. Still, the main difference lies in the lifespan as it persists in the browser until its current tab is on. Once we close the tab or terminate it, the data on session storage also gets lost. 
+            </p>
+          </article>
+          <article>
+            <h2>2. What is the difference between Global Scope & Block Scope?</h2>
+            <p>
+              <b>Global Scope:</b> The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable. <br>
+              Note: It is not a good practice to use global variables when they are not needed as every code block will have access to those variables.
+            </p>
+            <p>
+              <b>Block Scope:</b> If we were to define some variables inside curly brackets {} or inside a specific function then those variables are called local variables The local variables have a very confined scope which is called the local scope But, with the release of ES6, the local scope was further broken down into two different scopes: <br>
+              * Function scope. <br>
+              * Block scope.
+            </p>
+          </article>
+          <article>
+            <h2>3. How Event loop works?</h2>
+            <p>
+              <b>Event Loop:</b> The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+
+              Such an iteration is called a tick in the Event Loop. Each event is just a function callback.
+            </p>
+          </article>
+          <article>
+            <h2>4. When do we get undefined in JavaScript?</h2>
+            <p>
+              <b>8 ways to get undefined:</b> <br>
+              1. Variable that is not initialized will give undefined. <br> 
+              2. Function with no return. <br>
+              3. Parameter that is not passed will be undefined. <br>
+              4. If return has nothing on the right side will return undefined. <br>
+              5. Property that doesn't exists on an object will give you undefined. <br>
+              6. Accessing array elements outside of the index range. <br> 
+              7. Deleting an element inside an array. <br>
+              8. Set a value directly to undefined. <br>
+            </p>
+          </article>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
